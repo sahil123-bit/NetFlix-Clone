@@ -1,6 +1,7 @@
 import './Style/App.css';
 import Row from './Row';
 import request from './request';
+import Banner from './Banner'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       {/* Navbar =>Netflix logo && avatar logo */}
 
       {/* Banner => You will se random images of movies*/}
+      <Banner />
 
       {/* Rows  */}
       <Row title="NETFLIX ORIGINALS" fetchUrl ={request.fetchNetflixOriginals}
